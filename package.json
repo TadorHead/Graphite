@@ -1,0 +1,14 @@
+{
+	"name": "tadorhead.graphite-in-neon",
+	"title": "Graphite in Neon",
+	"description": "A semi-dark theme that's colourful and helpful.",
+	"homepage": "http://github.com/TadorHead/Graphite",
+	"version": "1.0.0",
+	"author": "TadorHead <tadorhead1@gmail.com>",
+	"theme": {
+		"file": "theme.less",
+		"dark": true,
+		"addModeClass": true	
+	},
+	"keywords": ["theme"]
+}
