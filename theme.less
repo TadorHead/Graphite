@@ -1,0 +1,160 @@
+/*Template*/
+.CodeMirror { 
+    font-family: imprima, sans-serif, "trebuchet ms" !important;
+    font-size: 15px !important; 
+    line-height: 1.4em; 
+}
+
+@background: #1d1f21;  
+@current-line: rgba(255, 255, 255, 0.14);  
+@foreground: #ededed;  
+@comment: #969896;
+@blue: #f9008d; 
+@purple: #d069f4;  
+@green: #09ff00;  
+@gray: #676767;  
+@aqua: #8abeb7;
+@yellow: #feff60;
+@attribute: #96cbfe;
+@property: #ededed;
+@quote: #2dba17;
+@tag: #009fff;
+@variable: #ededed; 
+@link: #555;
+
+@selection-color-focused: #444; 
+@selection-color-unfocused: #424242;
+
+@activeline-bgcolor: rgba(96, 96, 96, 0.5);
+@activeline-number-bgcolor: rgba(96, 96, 96, 0.5);
+@matching-bracket: #444;
+
+.CodeMirror .cm-keyword { color: @purple; }
+.CodeMirror .cm-atom { color: #ff8b3e; }
+.CodeMirror .cm-number { color: @green; }
+.CodeMirror .cm-def { color: @foreground; }
+.CodeMirror .cm-variable { color: #87ceff; }
+.CodeMirror .cm-variable-2 { color: #009fff; }
+.CodeMirror .cm-variable-3 { color: #f9008d; }
+.CodeMirror .cm-property { color: @property; }
+.CodeMirror .cm-operator { color: @foreground; }
+.CodeMirror .cm-comment { color: #c5c6c6; }
+.CodeMirror .cm-string { color: #7cfc00; }
+.CodeMirror .cm-string-2 { color: @aqua; }
+.CodeMirror .cm-meta { color: #171819; }
+.CodeMirror .cm-error { color: #ea0000; }
+.CodeMirror .cm-qualifier { color: @blue; }
+.CodeMirror .cm-builtin { color: @yellow; }
+.CodeMirror .cm-bracket { color: @foreground; }
+.CodeMirror .cm-tag { color: @tag; }
+.CodeMirror .cm-attribute { color: @attribute; }
+.CodeMirror .cm-header { color: @purple; }
+.CodeMirror .cm-quote { color: @quote; }
+.CodeMirror .cm-hr { color: @gray; }
+.CodeMirror .cm-link { color: @link; }
+.CodeMirror .cm-rangeinfo { color: @aqua; }
+.CodeMirror .cm-minus { color: @gray; }
+.CodeMirror .cm-plus { color: @green; }
+
+.CodeMirror,
+.CodeMirror .CodeMirror-scroll {
+    background-color: #6e6e70;
+    color: @foreground;
+}
+
+.CodeMirror .CodeMirror-selected {
+    background: @selection-color-unfocused;
+}
+.CodeMirror-focused .CodeMirror-selected {
+    background: @selection-color-focused;
+}
+.CodeMirror .CodeMirror-gutters {
+    background-color: #585859 ;
+    border-right: 1px solid #585859;
+    box-shadow: 1px 1px 10px #212121;
+}
+
+.CodeMirror-activeline .CodeMirror-gutter-elt {
+    color: @foreground !important;
+}
+
+.CodeMirror-gutter-elt {
+    color: @comment !important;
+}
+
+.CodeMirror-selected {
+    background: rgba(173, 107, 107, 0.39);
+}
+
+.CodeMirror .CodeMirror-matchingbracket {
+    color: #ffffff !important;
+    background-color: @matching-bracket;
+    margin-top: -1px;
+    opacity: .7;
+}
+
+.CodeMirror .CodeMirror-linenumber {
+    color: @activeline-number-bgcolor;
+}
+
+.CodeMirror-activeline-background,
+.CodeMirror-activeline .CodeMirror-gutter-elt {
+    background: @activeline-bgcolor !important;
+}
+
+.CodeMirror-matchingtag {
+    background: @matching-bracket;
+    margin-top: -1px;
+    opacity: .7;
+}
+
+.CodeMirror .CodeMirror-cursor {
+    border-left: 1px solid @foreground !important;
+}
+
+.CodeMirror .CodeMirror-overwrite .CodeMirror-cursor {
+    border-left: none !important;
+    border-bottom: 1px solid @foreground;
+    width: 1.2ex;
+}
+
+
+.CodeMirror .cm-dk-whitespace-space::before,
+.CodeMirror .cm-dk-whitespace-tab::before,
+.CodeMirror .cm-dk-whitespace-leading-space::before,
+.CodeMirror .cm-dk-whitespace-leading-tab::before,
+.CodeMirror .cm-dk-whitespace-trailing-space::before,
+.CodeMirror .cm-dk-whitespace-trailing-tab::before {
+    background-color: #75715E !important;
+}
+
+
+.CodeMirror-foldgutter,
+.CodeMirror-foldgutter,
+.CodeMirror-foldgutter-blank,
+.CodeMirror-foldgutter-folded,
+.CodeMirror-foldgutter-open {
+    color: #75715E;
+}
+
+.CodeMirror-foldgutter-open::after {
+    content: "\25bd";
+}
+
+.CodeMirror-foldmarker {
+    background-color: #333;
+    border-color: #555;
+    color: #555;
+    padding: 0 10px;
+}
+
+/* Non-editor styling */
+
+#image-holder,
+#not-editor {
+    background-color: @background;
+}
+
+#image-holder {
+    color: @foreground;
+}
